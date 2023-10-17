@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+  <form>
+    <input type="text" id="number" value="0"/>
+    <input type="button" onclick="incrementValue()" value="Increment Value" />
+ </form>
+<!-- 
+<button onclick="ascend()">Click</button>
+<button id="btn" name="Click" onclick="this.style.color='red'" onmouseleave="">Click</button>
+<input type="number" name="" onsubmit="return ascend()" id="nmbr">
+<p id="p1"></p> -->
+
+
+  <!-- <p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script> -->
+<!-- <p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+
+Form Validate
+
+<p id="demo"></p> -->
+<!-- <form name="MyForm" onsubmit="return validate()">
+<input type="text" name="Name">
+<input type="submit" value="Submit">
+</form> -->
+<script>
+// function myFunction() {
+//   // Get the value of the input field with id="numb"
+//   let x = document.getElementById("numb").value;
+//   // If x is Not a Number or less than one or greater than 10
+//   let text;
+//   if (isNaN(x) || x < 1 || x > 10) {
+//     text = "Input not valid";
+//   } else {
+//     text = "Input OK";
+//   }
+//   document.getElementById("demo").innerHTML = text;
+// }
+
+
+// document.write(Date());
+
+
+// Form Validation
+
+// function validate(){
+//   let x= document.forms["MyForm"]["Name"].value;
+//   if (x==""){
+//     alert( "Enter Name Please!");
+//     return false;
+//   }};
+
+
+// Ascend Function
+
+// function ascend(){const increment = document.getElementById("p1");
+// for (let i = 0; i < 100; i++) {
+//   increment[i].value = i;
+// };};
+// function increment(){
+//   let i=0;
+//   i=i++;};
+  // let increase=i++;
+  // document.getElementById("p1").innerHTML= i++;
+// };
+
+// function changecolor(){
+//   document.getElementById("p1").style.color="blue";
+// };function incrementValue()
+function incrementValue()
+{
+    var value = (document.getElementById('number').value);
+    // value = isNaN(value) ? 0 : value;
+    // value = value;
+    value++;
+    document.getElementById('number').value = value;
+}
+</script>
+</body>
+</html>
